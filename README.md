@@ -1,5 +1,6 @@
 # `psoc6-hal`
 
+[![Build Status](https://travis-ci.com/psoc-rs/psoc6-hal.svg?branch=master)](https://travis-ci.com/psoc-rs/psoc6-hal)
 [![license](https://img.shields.io/badge/license-apache%202.0-blue.svg)](https://opensource.org/licenses/apache-2.0)
 [![license: mit](https://img.shields.io/badge/license-mit-yellow.svg)](https://opensource.org/licenses/mit)
 
