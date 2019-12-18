@@ -1,4 +1,4 @@
-# pyOCD configuration
+# Example GDB configuration
 #
 # A gdbserver can be launched with the following command:
 #
