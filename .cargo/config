@@ -1,8 +1,9 @@
-[target.thumbv7em-none-eabihf]
-runner = "arm-none-eabi-gdb -q -x openocd.gdb"
+[target.'cfg(all(target_arch = "arm", target_os = "none"))']
+runner = "arm-none-eabi-gdb -q -x pyocd.gdb"
 rustflags = [
   "-C", "link-arg=-Tlink.x",
 ]
 
 [build]
-target = "thumbv7em-none-eabihf"
+target = "thumbv6m-none-eabi"  # M0+
+# target = "thumbv7em-none-eabihf"  # M4F
