@@ -10,6 +10,18 @@
 # - 3333 -> M0+
 # - 3334 -> M4
 
-target remote :3333
+target extended-remote :3333
+
+set print asm-demangle on
+
+set backtrace limit 32
+
+break DefaultHandler
+break HardFault
+break rust_begin_unwind
+break main
+
+monitor arm semihosting enable
+
 load
 stepi
