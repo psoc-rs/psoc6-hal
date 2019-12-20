@@ -3,3 +3,7 @@
 //! NOTE: This crate is currently a WIP!
 
 #![no_std]
+
+pub use embedded_hal as hal;
+
+pub mod gpio;
