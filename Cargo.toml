@@ -17,12 +17,16 @@ features = ["rt"]
 cortex-m = "0.6.1"
 cortex-m-rt = "0.6.11"
 
-[dependencies.psoc6-pac]
-git = "https://github.com/psoc-rs/psoc6-pac.git"
+[dependencies.cast]
+default-features = false
+version = "0.2.3"
 
 [dependencies.embedded-hal]
 features = ["unproven"]
 version = "0.2.3"
+
+[dependencies.psoc6-pac]
+git = "https://github.com/psoc-rs/psoc6-pac.git"
 
 [dev-dependencies]
 cortex-m-semihosting = "0.3.5"
