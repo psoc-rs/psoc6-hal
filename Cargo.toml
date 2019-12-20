@@ -10,6 +10,9 @@ readme = "README.md"
 repository = "https://github.com/psoc-rs/psoc6-hal"
 version = "0.1.0"
 
+[package.metadata.docs.rs]
+features = ["rt"]
+
 [dependencies]
 cortex-m = "0.6.1"
 cortex-m-rt = "0.6.11"
@@ -27,7 +30,7 @@ panic-halt = "0.2.0"
 panic-semihosting = "0.5.2"
 
 [features]
-rt = []
+rt = ["psoc6-pac/rt"]
 
 [profile.dev]
 incremental = false
